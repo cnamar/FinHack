@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <h1>Finhack</h1>
       <div
-        class="btn btn-success mt-6"
+        className="btn btn-success mt-6"
         onClick={() => {
           setdialogboxstatus(true);
         }}
