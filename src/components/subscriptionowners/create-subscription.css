@@ -1,0 +1,29 @@
+#subscriptionbox {
+  margin-top: 50 rem;
+}
+.textfield1 {
+  width: 200px;
+  margin-bottom: 10px;
+  height: 35px;
+  border-radius: 8px;
+  border-width: 0.3;
+  outline: none;
+}
+label {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+tr {
+  text-align: start;
+}
+#submitsub {
+  color: white;
+  background: green;
+  font-weight: 500;
+  border-radius: 5px;
+  border-width: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import "./Dialogbox.css";
-
 function Dialogbox(props) {
   const [eventname, setEventName] = useState(props.name);
   const [date, setdate] = useState(props.date);
