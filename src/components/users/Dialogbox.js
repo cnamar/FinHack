@@ -1,21 +1,20 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import "./Dialogbox.css";
-import Eventstable from "./Eventstable";
+
 function Dialogbox(props) {
   const [eventname, setEventName] = useState(props.name);
   const [date, setdate] = useState(props.date);
   const [duration, setduration] = useState(props.duration);
-  const [events, setevents] = useState([]);
-  const [tablestatus, settablestatus] = useState(false);
-  const handleSubmit = (e) => {
-    console.log(eventname + date + duration);
+  
+  
+  const handleSubmit =(e) => {
     e.preventDefault();
-    setevents([
-      ...events,
-      { event: eventname, date: date, duration: duration },
-    ]);
-    settablestatus(true);
+    console.log(eventname + date + duration);
+   
+    props.callBack({name:eventname,date:date,duration:duration});
+    
+    
   };
   return (
     <div id="dialogbox" style={{ marginTop: "10rem" }}>
@@ -79,7 +78,7 @@ function Dialogbox(props) {
           </table>
         </form>
       </div>
-      {tablestatus ? <Eventstable /> : null}
+      
     </div>
   );
 }
