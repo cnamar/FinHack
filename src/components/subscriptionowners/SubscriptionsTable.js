@@ -3,7 +3,7 @@ import "./subscriptionstable.css";
 function SubscriptionsTable(props) {
   var subscriptions = props.subscriptions;
 
-  return (
+  /* return (
     <div class="mt-5 ml-3 mr-3">
       <table className="viewtable">
         <tr style={{ border: "2px solid white" }}>
@@ -20,7 +20,8 @@ function SubscriptionsTable(props) {
         })}
       </table>
     </div>
-  );
+  );*/
+  return <div>hii</div>;
 }
 
 export default SubscriptionsTable;

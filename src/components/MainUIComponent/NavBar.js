@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function OwnerNavBar() {
+function NavBar() {
   return (
     <div>
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -9,13 +9,13 @@ function OwnerNavBar() {
           <ul className="navbar-nav mr-auto">
             <li className="navbar-item"></li>
             <li className="navbar-item">
-              <Link to="/owner/create" className="nav-link">
-                Create subscription
+              <Link to="/" className="nav-link">
+                User
               </Link>
             </li>
             <li className="navbar-item" aria-class>
-              <Link to="/owner/other" className="nav-link">
-                Other
+              <Link to="/owner" className="nav-link">
+                Owner
               </Link>
             </li>
           </ul>
@@ -25,4 +25,4 @@ function OwnerNavBar() {
   );
 }
 
-export default OwnerNavBar;
+export default NavBar;
