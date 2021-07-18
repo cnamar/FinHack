@@ -11,7 +11,7 @@ describe('Payment', () => {
   let payloop: Payloop
   let merchant: SignerWithAddress;
   let admin: SignerWithAddress;
-  let subscriber: SignerWithAddress
+  let subscriber: SignerWithAddress 
 
   let token: PayloopToken
   const THIRTY_DAYS = 30 * 24 * 60 * 60;

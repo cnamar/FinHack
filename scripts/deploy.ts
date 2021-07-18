@@ -4,8 +4,10 @@ import { ethers } from 'hardhat';
 async function main() {
 
   const Payloop = await ethers.getContractFactory("Payloop");
+  const PayloopToken = await ethers.getContractFactory("PayloopToken");
+  const token = await PayloopToken.deploy()
   const payloop = await Payloop.deploy();
-
+  console.log(payloop.address, token.address)
   await payloop.deployed();
 
 }

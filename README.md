@@ -1,11 +1,7 @@
-# Hardhat typescript boiler plate
+#Payloop
+A recurring payment system based on smart contracts leveraging the power and security of ethereum blockchain
 
 
-Add npm-check-updates globally
-`yarn global add npm-check-updates`
-
-Update you package.json
-`npm-check-updates -u`
-
-Install the packages
-`yarn install`
+Abstract :
+The existing systems of recurring payments are the so called pull based systems which have a chain of intermediaries like the credit card companies, the bank and finally the subscription provider. This chain of system requires trust and trust comes with expenses. Another major problem is the customers ownership on his account is further weakened we have seen many issues with Netflix and Other subscription providers.However, technically, nothing prevents your bank or payment provider from charging you more than you owe, except moral and legal obligations. 
+We are solving this problem by leveraging the power, security and privacy of blockchains.A smart contract based system is developed inorder to establish a users crptographic authority over his funds with enough flexibility for subcription providers to be paid in a push based authorized system with user as the owner of his funds still ensuring on time payments and reliability. A smart contract, which enables users to pay in erc20 tokens schedules payments like rent, subsription plans and access credit if needed is created. A basic frontend to demonstrate the functionality is created.
