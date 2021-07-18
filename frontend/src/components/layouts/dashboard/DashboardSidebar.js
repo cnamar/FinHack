@@ -58,7 +58,9 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
     >
       <Box sx={{ px: 2.5, py: 3 }}>
         <Box sx={{ display: "inline-flex" }}>
-          <Logo />
+          <Typography variant="subtitle2" sx={{ color: "text.primary" }}>
+              <h3 style={{fontWeight:"800"}}>FinHack'21</h3>
+            </Typography>
         </Box>
       </Box>
 
@@ -92,7 +94,8 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
           open={isOpenSidebar}
           onClose={onCloseSidebar}
           PaperProps={{
-            sx: { width: DRAWER_WIDTH },
+            sx: { width: DRAWER_WIDTH,
+            bgcolor:"gray", },
           }}
         >
           {renderContent}
@@ -106,7 +109,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
           PaperProps={{
             sx: {
               width: DRAWER_WIDTH,
-              bgcolor: "background.default",
+              bgcolor: "lightgray",
             },
           }}
         >
