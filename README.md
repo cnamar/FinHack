@@ -19,10 +19,10 @@ The existing systems of recurring payments are the so called pull based systems 
 We are solving this problem by leveraging the power, security and privacy of blockchains.A smart contract based system is developed inorder to establish a users crptographic authority over his funds with enough flexibility for subcription providers to be paid in a push based authorized system with user as the owner of his funds still ensuring on time payments and reliability. A smart contract, which enables users to pay in erc20 tokens schedules payments like rent, subsription plans and access credit if needed is created. A basic frontend to demonstrate the functionality is created.  
 
 
-Technologies Used:  
+# Technologies Used:  
                     Solidity(The programming language of ethereum virtual machine)  
                     React for front end  
                     Hardhat(A smart contract development framework)  
                     EthersJs(An ethereum client library)  
 
-Demonstration Video Link:-
+# Demonstration Video Link:-
