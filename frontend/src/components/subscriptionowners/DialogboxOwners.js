@@ -8,12 +8,12 @@ import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 function Dialogboxowners(props) {
   const [subscriptionname, setSubscriptionName] = useState(props.name);
-  const [Amount, setAmount] = useState(props.date);
+  const [amount, setAmount] = useState(props.amount);
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(subscriptionname + Amount);
+    console.log(subscriptionname + amount);
 
-    props.callBack({ name: subscriptionname, Amount: Amount });
+    props.callBack({ name: subscriptionname, amount: amount });
   };
 
   const useStyles = makeStyles((theme) => ({
@@ -71,11 +71,11 @@ function Dialogboxowners(props) {
           margin="normal"
           required
           fullWidth
-          label="Subscription Amount"
-          name="Amount"
-          value={Amount}
+          label="Subscription amount"
+          name="amount"
+          value={amount}
           onChange={(e) => setAmount(e.target.value)}
-          autoComplete="Amount"
+          autoComplete="amount"
           autoFocus
         />
         <Button

@@ -28,37 +28,36 @@ function Ownerscomponent() {
   };
   return (
     <div>
-      <h1>Finhack</h1>
+      <div>
+      <h1 style={{float:'left',  marginLeft: "10px",}}>Finhack</h1>
       <div
         className="btn btn-success mt-6"
-        style={{ marginRight: "10px" }}
+        style={{ marginLeft: "20px", marginTop:"5px"}}
         onClick={() => {
           setdialogboxstatus(true);
         }}
       >
         Add Subscription
       </div>
-      <div
-        className="btn btn-success mt-6"
-        onClick={() => {
-          settableStatus(true);
-        }}
-      >
-        Details
+
       </div>
+      <br />
+      
+      
+      
       <Dialog
         open={dialogboxstatus}
         onClose={handleClose}
         style={{ borderRadius: "10" }}
       >
-        <Dialogbox name={"aaa"} Amount={"2000"} callBack={handleCallback} />
+        <Dialogbox name={""} amount={""} callBack={handleCallback} />
       </Dialog>
       {/* {dialogboxstatus ? (
         <Dialogbox name={"aaa"} date={"2020-01-01"} duration={1} callBack={handleCallback}/>
       ) : null
       
       }, */}
-      {tableStatus ? <Eventstable state={subscriptions} /> : null},
+      {subscriptions.length>0 ? <Eventstable state={subscriptions} /> : null},
     </div>
   );
 }

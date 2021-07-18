@@ -7,9 +7,9 @@ import { makeStyles } from "@material-ui/styles";
 import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 function Dialogbox(props) {
-  const [eventname, setEventName] = useState(props.name);
-  const [date, setdate] = useState(props.date);
-  const [duration, setduration] = useState(props.duration);
+  const [eventname, setEventName] = useState("");
+  const [date, setdate] = useState("");
+  const [duration, setduration] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();

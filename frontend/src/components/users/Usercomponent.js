@@ -28,33 +28,28 @@ function Usercomponent() {
   };
   return (
     <div>
-      <h1>Finhack</h1>
+      <div>
+      <h1 style={{float:'left',  marginLeft: "10px",}}>Finhack</h1>
       <div
         className="btn btn-success mt-6"
-        style={{ marginRight: "10px" }}
+        style={{ marginLeft: "20px", marginTop:"5px"}}
         onClick={() => {
           setdialogboxstatus(true);
         }}
       >
         Payment Schedule
       </div>
-      <div
-        className="btn btn-success mt-6"
-        onClick={() => {
-          settableStatus(true);
-        }}
-      >
-        Details
+
       </div>
+      <br />
+      
       <Dialog
         open={dialogboxstatus}
         onClose={handleClose}
         style={{ borderRadius: "10" }}
       >
         <Dialogbox
-          name={"aaa"}
-          date={"2020-01-01"}
-          duration={1}
+          
           callBack={handleCallback}
         />
       </Dialog>
@@ -63,7 +58,8 @@ function Usercomponent() {
       ) : null
       
       }, */}
-      {tableStatus ? <Eventstable state={events} /> : null},
+      
+      {events.length>0 ? <Eventstable state={events} /> : <h5>Table is empty</h5>},
     </div>
   );
 }
