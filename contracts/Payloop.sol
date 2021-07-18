@@ -98,7 +98,7 @@ contract Payloop {
 
     function pay(address subscriber, uint256 planId) external {
         Subscription storage subscription = subscriptions[subscriber][planId];
-        Plan storage plan = plans[planId];
+        Plan storage plan = plans[planId]; 
         IERC20 token = IERC20(plan.token);
         require(
             subscription.subscriber != address(0),
