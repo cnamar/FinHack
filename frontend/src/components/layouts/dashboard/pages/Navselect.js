@@ -10,7 +10,7 @@ function Navselect() {
     <div className="flex justify-between px-8 py-4">
       <div className="flex gap-4">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <p className="tab">user</p>
+          <p className="tab">User</p>
         </Link>
         <Link to="/owner" style={{ textDecoration: "none" }}>
           <p className="tab">Subscription owners</p>
