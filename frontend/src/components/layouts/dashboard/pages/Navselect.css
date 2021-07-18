@@ -1,0 +1,27 @@
+.tab.active {
+  border-bottom: 1px solid #172683;
+}
+.tab {
+  cursor: pointer;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-4 {
+  gap: 1rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
